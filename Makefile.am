@@ -544,6 +544,7 @@ jemalloc_deps:
 unit_tests: checkprogs
 	test/all_tests --gtest_filter=*free_with_NULL_kind_4096_bytes:NegativeTest.*:ErrorMessage.*:GetArenaTest.*:MemkindVersioningTests.*
 	test/decorator_test
+    test/decorator_memtier_test
 
 PMEM_PATH=/tmp/
 unit_tests_pmem: checkprogs
